@@ -76,38 +76,77 @@
 					<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
 					</form>
                                         <p>
-                    <h3>Monthly Local Dues</h3>
-                    <p>Use this form to set up monthly recurring dues payments.</p>
-                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top"><input name="cmd" type="hidden" value="_xclick-subscriptions" /> <input name="business" type="hidden" value="5Y9NYX8JZQRNN" /> <input name="lc" type="hidden" value="US" /> <input name="item_name" type="hidden" value="Monthly Local Dues" /> <input name="no_note" type="hidden" value="1" /> <input name="no_shipping" type="hidden" value="1" /> <input name="src" type="hidden" value="1" /> <input name="currency_code" type="hidden" value="USD" /> <input name="bn" type="hidden" value="PP-SubscriptionsBF:btn_subscribe_SM.gif:NonHosted" />
-                    <table>
-                    <tbody>
-                    <tr>
-                    <td><input name="on0" type="hidden" value="" /></td>
-                    </tr>
-                    <tr>
-                    <td><select name="os0">
-                    <option value="Local Member">Local Member: $20.00 USD - monthly</option>
-                    <option value="Affiliate Member">Affiliate Member: $10.00 USD - monthly</option>
-                    <option value="Above &amp; Beyond 31">Above &amp; Beyond: $31.00 USD - monthly</option>
-                    <option value="Above &amp; Beyond 56">Above &amp; Beyond: $56.00 USD - monthly</option>
-                    <option value="Above &amp; Beyond 93">Above &amp; Beyond: $93.00 USD - monthly</option>
-                    <option value="Above &amp; Beyond">Above &amp; Beyond: Enter a custom amount below</option>
-                    </select></td>
-                    </tr>
-                    </tbody>
-                    </table>
-                    <input name="currency_code" type="hidden" value="USD" /> <input name="option_select0" type="hidden" value="Local Member" /> <input name="option_amount0" type="hidden" value="20.00" /> <input name="option_period0" type="hidden" value="M" /> <input name="option_frequency0" type="hidden" value="1" /> <input name="option_select1" type="hidden" value="Affiliate Member" /> <input name="option_amount1" type="hidden" value="10.00" /> <input name="option_period1" type="hidden" value="M" /> <input name="option_frequency1" type="hidden" value="1" /> <input name="option_select2" type="hidden" value="Above &amp; Beyond 31" /> <input name="option_amount2" type="hidden" value="31.00" /> <input name="option_period2" type="hidden" value="M" /> <input name="option_frequency2" type="hidden" value="1" /> <input name="option_select3" type="hidden" value="Above &amp; Beyond 56" /> <input name="option_amount3" type="hidden" value="56.00" /> <input name="option_period3" type="hidden" value="M" /> <input name="option_frequency3" type="hidden" value="1" /> <input name="option_select4" type="hidden" value="Above &amp; Beyond 93" /> <input name="option_amount4" type="hidden" value="93.00" /> <input name="option_period4" type="hidden" value="M" /> <input name="option_frequency4" type="hidden" value="1" /> <input name="option_select5" type="hidden" value="Above &amp; Beyond" /> <input name="option_amount5" type="text" value="" /> <input name="option_period5" type="hidden" value="M" /> <input name="option_frequency5" type="hidden" value="1" /> <input name="option_index" type="hidden" value="0" />
-                    <p>Leave this box blank unless entering a custom amount. Enter a number only, no "$".</p>
-                    <p><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribe_SM.gif" type="image" /> <img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0" /></p>
-                    </form>
+                    <h3>Minerval, Supporter, or Associate - $25/month</h3>
 
-                                        </p>
-                                        
-					
+<div style="width:50%" id="paypal-button-container-P-3GD88832C4305151SM56KFIY"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=AZz85C9sS-AXiI3CK3Mamj2I5VCBd9ekCsBaT6hL8jFpKtT8UtMO8YyiW5Hg7RUXTYnB7pnwdmN4ylFi&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'paypal'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-3GD88832C4305151SM56KFIY'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-3GD88832C4305151SM56KFIY'); // Renders the PayPal button
+</script>
+
+<h3>Member - $50/month</h3>
+<div style="width: 50%" id="paypal-button-container-P-1YS66467W80342206M56KJSY"></div>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-1YS66467W80342206M56KJSY'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-1YS66467W80342206M56KJSY'); // Renders the PayPal button
+</script>
+
+
+<h3>Member - additional support $93/month</h3>
+<div style="width: 50%"  id="paypal-button-container-P-2WN422196E286421MM56KLOI"></div>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'blue',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-2WN422196E286421MM56KLOI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-2WN422196E286421MM56KLOI'); // Renders the PayPal button
+</script>
+
 				</div>
-				
 			</div>
-
 		</div>
 	</div>
 
