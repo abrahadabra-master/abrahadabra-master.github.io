@@ -6,7 +6,7 @@ For more information, see http://andreasviklund.com/templates/the-grid/
 *{margin:0; padding:0;}
 
 /* General styles */
-body {background:#fff url(images/background.jpg) top center no-repeat; color:#303030; font:84% Helvetica,Tahoma,sans-serif; line-height:1.4em;}
+body {background:#fff; color:#303030; font:84% Helvetica,Tahoma,sans-serif; line-height:1.4em;}
 a {color:#2a5a7a; text-decoration:none;}
 a:hover {text-decoration:underline;}
 p,ul,ol,dl {margin:0 0 20px 0;}
@@ -23,13 +23,13 @@ h1,h2,h3 {font-weight:400; line-height:1em; font-family:Georgia, serif;}
 #footer .col {text-align:right; color:#888; font-size:0.9em; border-top:2px solid #eee; padding:10px 0;}
 
 /* Grid classes, fixed width, 960px with 12 columns */
-.col {float:left; margin:0 10px; overflow:hidden; float:left; display:inline;}
+.col {float:left; margin:0 10px; /*overflow:hidden;*/ float:left; display:inline;}
 .col img {max-width:100%;}
-.row {width:960px; margin:0 auto; overflow:hidden;}
+.row {width:960px; margin:0 auto; /*overflow:hidden;*/}
 .row .row {margin:0 -10px; width:auto;	display:inline-block;}
 .c1 {width:60px;}
 .c2 {width:140px;}
-.c3 {width:220px;}
+.c3 {/*width:220px;*/}
 .c4 {width:300px;}
 .c5 {width:380px;}
 .c6 {width:460px;}
